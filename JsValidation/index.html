@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="registrationForm" onsubmit="validateForm(event)">
+        <h2>Registration Form</h2>
+
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter your first name"
+          />
+          <br />
+          <span class="error-message" id="firstNameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="surname">Surname</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Enter your surname"
+          />
+          <br />
+
+          <span class="error-message" id="surnameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea
+            id="address"
+            name="address"
+            placeholder="Enter your address"
+          ></textarea>
+          <br />
+          <span class="error-message" id="addressError"></span>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="gender-options">
+            <label>
+              <input type="radio" name="gender" value="Male" /> Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="Female" /> Female
+            </label>
+            <label>
+              <input type="radio" name="gender" value="Other" /> Other
+            </label>
+          </div>
+          <br />
+          <span class="error-message" id="genderError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="pinCode">Pin Code</label>
+          <input
+            type="text"
+            id="pinCode"
+            name="pinCode"
+            placeholder="Enter your pin code"
+          />
+          <br />
+          <span class="error-message" id="pinCodeError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Enter your city"
+          />
+          <br />
+          <span class="error-message" id="cityError"></span>
+        </div>
+
+        <div class="form-group">
+          <label>Education</label>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="education" value="SSC" /> SSC
+            </label>
+            <label>
+              <input type="checkbox" name="education" value="High School" />
+              High School
+            </label>
+            <label>
+              <input type="checkbox" name="education" value="Postgraduate" />
+              Postgraduate
+            </label>
+            <label>
+              <input type="checkbox" name="education" value="Other" /> Other
+            </label>
+          </div>
+          <br />
+          <span class="error-message" id="educationError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <br />
+          <span class="error-message" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+          <br />
+          <span class="error-message" id="passwordError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm your password"
+          />
+          <br />
+          <span class="error-message" id="confirmPasswordError"></span>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
