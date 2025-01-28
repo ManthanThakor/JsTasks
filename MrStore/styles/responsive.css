@@ -1,0 +1,157 @@
+@media (max-width: 1478px) {
+  .custom-prev {
+    left: 44.6%;
+  }
+
+  .custom-next {
+    right: 44.6%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .wall-paper-sec {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .header-contnet-img {
+    display: none;
+  }
+  .navbar-sec {
+    padding: 10px 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-sec,
+  .wall-paper-sec,
+  #feature-sec-row,
+  .Clients-slider {
+    padding: 10px 60px;
+  }
+
+  .custom-prev {
+    left: 40.6%;
+  }
+
+  .custom-next {
+    right: 40.6%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wall-paper-sec,
+  #feature-sec-row,
+  .navbar-sec,
+  .Clients-slider {
+    padding: 10px 15px;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  .header-content p {
+    font-size: 1rem;
+  }
+  .header-content-sec {
+    top: 45%;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .nav-link-part.active {
+    width: 100%;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+    padding: 0px;
+    border-radius: 8px;
+    width: 60%;
+    height: 100vh;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    animation: slideIn2 0.3s ease-out;
+  }
+
+  .nav-links.show {
+    display: flex;
+    transform: translateX(0);
+    background-color: black;
+    z-index: 99;
+    border-radius: 0px;
+    justify-content: center;
+  }
+
+  .nav-link-part {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .nav-link-part:hover {
+    color: var(--gradient-button);
+  }
+
+  .nav-link-part.active {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .close-btn {
+    display: block;
+  }
+
+  .content .image-grid {
+    display: block; /* or display: flex; */
+  }
+}
+@keyframes slideIn2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 537px) {
+  .custom-prev {
+    left: 15px;
+    font-size: 20px;
+  }
+  #arrow-client {
+    padding: 5px;
+  }
+  .custom-next {
+    right: 15px;
+    font-size: 20px;
+  }
+  .custom-prev,
+  .custom-next {
+    top: 60%;
+    transform: translateY(-50%);
+  }
+  .Clients-section {
+    padding: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .card-part {
+    width: 100%;
+    height: 320px;
+  }
+  .wallpaper {
+    width: 100%;
+    height: 320px;
+  }
+}
